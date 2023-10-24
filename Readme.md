@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Игорь Тимохин](https://up.htmlacademy.ru/htmlcss-individual/1/user/2449807).
-* Наставник: `Неизвестно`.
+* Наставник: `Виктория Никитина`(https://github.com/vikitina).
 
 ---
 
