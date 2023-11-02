@@ -28,10 +28,14 @@
 .body {
   padding: 0;
   margin: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
-.nav {}
+.nav {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
 
 .header-nav {
   padding: 0;
@@ -43,6 +47,20 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.header-nav-link {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .user-menu {
@@ -55,15 +73,42 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
-.cover {}
+.user-menu-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
 
-.welcome {}
+.cover {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
 
-.gorgeuos {}
+.welcome {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
 
-.sedona text {}
+.gorgeuos {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
+
+.sedona text {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
 
 
 .description {
@@ -76,6 +121,11 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .description-list {
@@ -84,7 +134,7 @@
   list-style: none;
 }
 
-. .description-item {
+.description-item {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -94,6 +144,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
 }
 
 .description-list {
@@ -112,13 +166,26 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
 }
+
+.description-item-title-white {}
 
 .description-item-text {
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
 }
+
+.description-item-text-white {}
 
 .service {
   padding: 0;
@@ -130,12 +197,21 @@
   padding: 0;
   margin: 0;
   list-style: none;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .service-text22 {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
 }
 
 .service-list {
@@ -153,59 +229,103 @@
 .service-item-title {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .service-text18 {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
 }
 
-.promo {}
+.promo {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
 
 .promo-title {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
 }
 
 .promo-text {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333333;
 }
 
 .promo-link {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.subscribe {}
+.subscribe {
+  padding: 0;
+  margin: 0;
+  list-style: none
+}
 
 .footer-title {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .footer-text {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .footer-field {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .subscribe-button {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .footer-contacts {
@@ -235,5 +355,21 @@
 .footer-contacts-item-Tel {
   padding: 0;
   margin: 0;
-  list-style: none
+  list-style: none;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.a-tel {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
 }
