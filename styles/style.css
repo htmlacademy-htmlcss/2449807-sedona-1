@@ -10,7 +10,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2")format(woff2);
+  src: url("../fonts/ptsans-700.woff2") format(woff2);
   font-display: swap;
 }
 
@@ -29,18 +29,44 @@
   padding: 0;
   margin: 0;
   font-family: "PT Sans", "Arial", sans-serif;
+  background: #f2f2f2;
+}
+
+.container {
+  background: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
+}
+
+.main-header {
+  position: relative;
+  padding-left: 238px;
+}
+
+.logo-link {
+  position: absolute;
+  top: 0;
+  left: 70px;
 }
 
 .nav {
   padding: 0;
   margin: 0;
-  list-style: none
+  width: 892px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .header-nav {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
 }
 
 .header-nav-item {
@@ -53,7 +79,7 @@
 }
 
 .header-nav-link {
-  padding: 0;
+  padding: 20px 16px;
   margin: 0;
   list-style: none;
   font-size: 20px;
@@ -61,12 +87,27 @@
   line-height: 24px;
   text-decoration: none;
   color: #000000;
+  display: block;
 }
+
+.header-nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.10);
+}
+
+.header-nav-link:focus {
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.10);
+}
+
+.header-nav-link:active {}
 
 .user-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .user-menu-item {
@@ -78,18 +119,31 @@
   line-height: 20px;
 }
 
-.user-menu-link {
+.user-menu-link-search {
+  text-decoration: none;
+  background: url("../images/icons/search.svg");
+}
+
+.user-menu-link-favorite {
+  text-decoration: none;
+  background: url("../images/icons/heart.svg");
+}
+
+.user-menu-link-button {
+  color: #ffffff;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-decoration: none;
-  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 8px 50px 8px 50px;
+  display: block;
+  border-radius: 4px;
+  background: var(--buttons-basic, #756157);
 }
 
 .cover {
-  padding: 0;
-  margin: 0;
-  list-style: none
+  background: rgb(38, 34, 23) url("../images/welcome-background.jpg");
 }
 
 .welcome {
@@ -282,7 +336,7 @@
   line-height: 36px;
   text-decoration: none;
   text-transform: uppercase;
-  color:#000000;
+  color: #000000;
 }
 
 .subscribe {
