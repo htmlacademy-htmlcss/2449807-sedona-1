@@ -143,13 +143,17 @@
 }
 
 .cover {
-  background: rgb(38, 34, 23) url("../images/welcome-background.jpg");
+  background-color: rgb(38, 34, 23);
+  background-image: url("../images/divider.svg"), url("../images/welcome-background.jpg");
+  padding: 51px 0 82px;
+  background-repeat: no-repeat no-repeat;
+  background-size: 1200px 57px, cover;
+  background-position: left bottom, center 0;
 }
 
 .welcome {
-  padding: 0;
-  margin: 0;
-  list-style: none
+  display: block;
+  margin: 0 auto;
 }
 
 .gorgeuos {
