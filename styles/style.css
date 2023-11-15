@@ -106,8 +106,9 @@
   margin: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 20px;
+
 }
 
 .user-menu-item {
@@ -127,6 +128,17 @@
 .user-menu-link-favorite {
   text-decoration: none;
   background: url("../images/icons/heart.svg");
+  display: flex;
+  padding: 22px 12px 22px 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.favorite-number {
+  color: #ffffff;
+  border-radius: 10px;
+  background: var(--icons-text, #7DB54F);
+  font-size: 10px;
 }
 
 .user-menu-link-button {
