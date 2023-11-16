@@ -168,23 +168,12 @@
   margin: 0 auto;
 }
 
-.gorgeuos {
-  padding: 0;
-  margin: 0;
-  list-style: none
-}
-
-.sedona text {
-  padding: 0;
-  margin: 0;
-  list-style: none
-}
-
-
 .description {
-  padding: 0;
+  padding: 69px 0;
   margin: 0;
   list-style: none;
+  text-align: center;
+  display: block;
 }
 
 .desctiption-catchy {
@@ -211,7 +200,8 @@
 }
 
 .s2-text {
-  padding: 0;
+  padding-top: 25px;
+  ;
   margin: 0;
   list-style: none;
   font-size: 22px;
@@ -355,10 +345,21 @@
   color: #000000;
 }
 
+.subscribe-background {
+  background-image: url("../images/background-subscribe.jpeg");
+  background-repeat: no-repeat;
+  background-color: rgb(38, 34, 23);
+  background-size: contain;
+  width: 1200px;
+  height: 414px;
+}
+
 .subscribe {
-  padding: 0;
-  margin: 0;
-  list-style: none
+  display: flex;
+  padding: 96px 258px 104px 258px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-title {
@@ -369,6 +370,9 @@
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 20px;
 }
 
 .footer-text {
@@ -378,69 +382,115 @@
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 50px;
+
+
 }
 
 .footer-field {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe-input {
+  padding: 12px 20px;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
+  border-radius: 4px 0px 0px 4px;
+  background: var(--basic-light, #F2F2F2);
+  display: flex;
+  align-items: center;
+  gap: 260px;
+  flex: 1 0 0;
+  align-self: stretch;
+  background-size: cover;
+  width: 412px;
+  height: 29px;
 }
 
 .subscribe-button {
-  padding: 0;
-  margin: 0;
   list-style: none;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0px 4px 4px 0px;
+  background: var(--buttons-second, #82B3D3);
+  color: #ffffff;
+  width: 230px;
+  height: 57px;
+  display: inline-flex;
+  gap: 10px;
+}
+
+.contacts {
+  display: flex;
+  position: relative;
 }
 
 .footer-contacts {
-  padding: 0;
-  margin: 0;
-  list-style: none
+  display: flex;
+  width: 1060px;
+  margin: auto;
+  justify-content: space-around;
+  padding: 40px 70px 30px 70px;
 }
 
 .footer-contacts-item-Vkontakte {
-  padding: 0;
-  margin: 0;
-  list-style: none
+  display: flex;
+  padding: 0 11px;
+  background-image: url("../images/Social/VK.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-contacts-item-Telegram {
-  padding: 0;
-  margin: 0;
-  list-style: none
+  display: flex;
+  padding: 1px 10px;
+  background-image: url("../images/Social/Telegram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-contacts-item-Youtube {
-  padding: 0;
-  margin: 0;
-  list-style: none
+  display: flex;
+  padding: 0px 11px;
+  background-image: url(../images/Social/Youtube.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .footer-contacts-item-Tel {
-  padding: 0;
-  margin: 0;
   list-style: none;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+  padding: 6px 337px 5px 223px;
 }
 
 .a-tel {
   padding: 0;
-  margin: 0;
   list-style: none;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
   text-decoration: none;
   color: #000000;
+}
+
+.footer-logo-link {
+  position: absolute;
+  width: 114.9px;
+  height: 32.9px;
+  bottom: 39px;
+  right: 70px;
 }
