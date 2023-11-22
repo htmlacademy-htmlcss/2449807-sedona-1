@@ -108,6 +108,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
 
 }
 
@@ -120,18 +121,29 @@
   line-height: 20px;
 }
 
-.user-menu-link-search {
+.user-menu-item-search {
   text-decoration: none;
   background: url("../images/icons/search.svg");
+  width: 18px;
+  height: 18px;
+  padding: 22px 12px 22px 12px;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.user-menu-link-favorite {
+.user-menu-item-favorite {
   text-decoration: none;
   background: url("../images/icons/heart.svg");
   display: flex;
-  padding: 22px 12px 22px 12px;
   background-repeat: no-repeat;
   background-position: center;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 17px;
+
 }
 
 .favorite-number {
@@ -148,7 +160,7 @@
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 8px 50px 8px 50px;
+  padding: 9px 34px 6px 35px;
   display: block;
   border-radius: 4px;
   background: var(--buttons-basic, #756157);
@@ -384,7 +396,7 @@
   line-height: 26px;
   text-align: center;
   color: #ffffff;
-  padding-bottom: 50px;
+  padding: 0 0px 54px 2px;
 
 
 }
@@ -408,26 +420,27 @@
   align-self: stretch;
   background-size: cover;
   width: 412px;
-  height: 29px;
+  height: 28px;
+  border: 0;
 }
 
 .subscribe-button {
-  list-style: none;
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  padding: 8px 50px;
+  padding: 26px 116px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 0 4px 4px 0;
   background: var(--buttons-second, #82B3D3);
   color: #ffffff;
-  width: 230px;
-  height: 57px;
-  display: inline-flex;
+  width: 132px;
+  height: 36px;
+  display: flex;
   gap: 10px;
+  border: 0;
 }
 
 .contacts {
@@ -440,12 +453,12 @@
   width: 1060px;
   margin: auto;
   justify-content: space-around;
-  padding: 40px 70px 30px 70px;
+  padding: 40px 70px 30px 69px;
 }
 
 .footer-contacts-item-Vkontakte {
   display: flex;
-  padding: 0 11px;
+  padding: 0 12px;
   background-image: url("../images/Social/VK.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -462,7 +475,7 @@
 .footer-contacts-item-Youtube {
   display: flex;
   padding: 0 11px;
-  background-image: url(../images/Social/Youtube.svg);
+  background-image: url("../images/Social/Youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
