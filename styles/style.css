@@ -126,7 +126,7 @@
   background: url("../images/icons/search.svg");
   width: 18px;
   height: 18px;
-  padding: 22px 12px 22px 12px;
+  padding: 22px 0px 22px 35px;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
@@ -143,6 +143,7 @@
   align-items: center;
   width: 18px;
   height: 17px;
+  padding: 0px 0px 0px 15px;
 
 }
 
@@ -151,6 +152,9 @@
   border-radius: 10px;
   background: var(--icons-text, #7DB54F);
   font-size: 10px;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 
 .user-menu-link-button {
@@ -160,7 +164,8 @@
   line-height: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 9px 34px 6px 35px;
+  padding: 7px 35px 7px 34px;
+  margin-left: 24px;
   display: block;
   border-radius: 4px;
   background: var(--buttons-basic, #756157);
@@ -320,15 +325,21 @@
 }
 
 .promo {
-  padding: 0;
-  margin: 0;
-  list-style: none
+  list-style: none;
+  display: flex;
+  padding: 26px 304px 96px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
 .promo-title {
   padding: 0;
   margin: 0;
   list-style: none;
+  text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -336,13 +347,14 @@
 }
 
 .promo-text {
-  padding: 0;
+  padding: 10px 0px 44px;
   margin: 0;
   list-style: none;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   color: #333333;
+  text-align: center;
 }
 
 .promo-link {
@@ -350,11 +362,19 @@
   margin: 0;
   list-style: none;
   font-size: 20px;
+  width: 276px 36px;
   font-weight: 700;
   line-height: 36px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  display: inline-flex;
+  padding: 8px 50px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  border-radius: 4px;
+  background: var(--buttons-basic, #756157);
 }
 
 .subscribe-background {
@@ -458,7 +478,7 @@
 
 .footer-contacts-item-Vkontakte {
   display: flex;
-  padding: 0 12px;
+  padding: 0 12px 0 11px;
   background-image: url("../images/Social/VK.svg");
   background-repeat: no-repeat;
   background-position: center;
