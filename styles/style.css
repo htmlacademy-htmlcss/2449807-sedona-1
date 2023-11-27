@@ -473,31 +473,41 @@
   width: 1060px;
   margin: auto;
   justify-content: space-around;
-  padding: 40px 70px 30px 69px;
+  align-items: center;
+  padding: 40px 70px 30px 70px;
 }
 
 .footer-contacts-item-Vkontakte {
   display: flex;
-  padding: 0 12px 0 11px;
+  width: 24.001px;
+  height: 14px;
+  padding: 0 10px;
   background-image: url("../images/Social/VK.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 2px;
 }
 
 .footer-contacts-item-Telegram {
   display: flex;
-  padding: 1px 10px;
+  width: 18px;
+  height: 16px;
+  padding: 0px 10px;
   background-image: url("../images/Social/Telegram.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 2px;
 }
 
 .footer-contacts-item-Youtube {
   display: flex;
-  padding: 0 11px;
+  width: 22px;
+  height: 17px;
+  padding: 0 10px;
   background-image: url("../images/Social/Youtube.svg");
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 40px;
 }
 
 .footer-contacts-item-Tel {
@@ -507,7 +517,7 @@
   line-height: 40px;
   text-decoration: none;
   color: #000000;
-  padding: 6px 337px 5px 223px;
+  padding: 6px 348px 5px 195px;
 }
 
 .a-tel {
