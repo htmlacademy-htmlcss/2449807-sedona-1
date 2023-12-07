@@ -102,8 +102,7 @@
   background-color: rgba(0, 0, 0, 0.10);
 }
 
-.header-nav-link:active {
-}
+.header-nav-link:active {}
 
 .user-menu {
   padding: 0;
@@ -158,14 +157,16 @@
   border-radius: 10px;
   background: #7DB54F;
   font-size: 10px;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   position: absolute;
-  left: 15px;
+  right: 0;
   top: -4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 4px;
+  box-sizing: border-box;
 }
 
 .user-menu-link-button {
@@ -335,6 +336,8 @@
 
 .service-catchy {
   text-align: center;
+  padding: 0;
+  margin: 0 auto;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -346,12 +349,12 @@
 
 .service-text22 {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   color: #333333;
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 .service-list {
@@ -359,34 +362,44 @@
   grid-template-columns: 400px 400px 400px;
   padding: 0;
   margin: 0;
+  text-align: center;
   list-style: none
 }
 
 .service-item {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 160px 0px 62px 0px;
   background-color: #83B3D31F;
   position: relative;
 }
 
-.homesvg {
+.service-item::before {
   position: absolute;
+  content: "";
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.homesvg::before {
+  background-image: url(../images/homesvg.svg);
   left: 163px;
   top: 81px;
+  width: 75px;
+  height: 72px;
 }
 
-.foodsvg {
-  position: absolute;
+.foodsvg::before {
+  background-image: url(../images/food.svg);
   left: 163px;
   top: 82px;
+  width: 74px;
+  height: 70px;
 }
 
-.boxsvg {
-  position: absolute;
+.boxsvg::before {
+  background-image: url(../images/box.svg);
   left: 168px;
   top: 79px;
+  width: 64px;
+  height: 76px;
 }
 
 .service-item:nth-child(2n) {
@@ -394,7 +407,10 @@
 }
 
 .service-item-title {
-  margin-bottom: 11px;
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 29px;
+  padding-top: 184px;
   text-align: center;
   list-style: none;
   font-size: 24px;
@@ -402,71 +418,73 @@
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  Width: 230px;
+  width: 230px;
   position: relative;
 }
 
 
 .service-text18 {
   text-align: center;
+  padding: 0;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   color: #333333;
-  Width: 230px;
+  Width: 250px;
+  margin-bottom: 81px;
+  box-sizing: border-box;
 }
 
 .promo {
-  list-style: none;
-  display: flex;
-  padding: 97px 304px 96px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
 .promo-title {
   padding: 0;
-  margin: 0;
-  list-style: none;
+  margin: 0 auto;
+  width: 592px;
+  ;
+  text-align: center;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   color: #000000;
+  margin-bottom: 20px;
+  padding-top: 96px;
 }
 
 .promo-text {
-  padding: 10px 0px 44px;
-  margin: 0;
+  padding: 0 75px;
+  margin: 0 auto;
+  width: 700px;
   list-style: none;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   color: #333333;
   text-align: center;
+  margin-bottom: 54px;
 }
 
 .promo-link {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   font-size: 20px;
-  width: 276px 36px;
+  min-width: 276px;
   font-weight: 700;
   line-height: 36px;
   text-decoration: none;
   text-transform: uppercase;
-  display: inline-flex;
+  display: inline-block;
   padding: 8px 50px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  text-align: center;
   color: #ffffff;
   border-radius: 4px;
   background: #756157;
+  margin-bottom: 96px;
 }
 
 .promo-link:hover {
@@ -491,7 +509,6 @@
 
 .subscribe {
   display: flex;
-  padding: 96px 258px 104px 258px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -499,7 +516,7 @@
 
 .footer-title {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   font-size: 30px;
   font-weight: 700;
@@ -507,21 +524,20 @@
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+  padding-top: 96px;
 }
 
 .footer-text {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
   color: #ffffff;
-  padding: 0 0px 55px 2px;
-
-
+  margin-bottom: 55px;
 }
 
 .footer-field {
@@ -539,14 +555,13 @@
   background: var(--basic-light, #F2F2F2);
   display: flex;
   align-items: center;
-  gap: 260px;
-  flex: 1 0 0;
   align-self: stretch;
   background-size: cover;
   width: 412px;
   height: 28px;
   border: 0;
   outline: none;
+  margin-bottom: 104px;
 }
 
 .subscribe-button {
