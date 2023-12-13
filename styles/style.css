@@ -1072,10 +1072,13 @@
   line-height: 36px;
   text-transform: uppercase;
 }
+
 .catalog-form {
   display: flex;
   justify-content: space-around;
+  padding: 0 70px;
 }
+
 #catalog-select {
   font-size: 18px;
   color: #333333;
@@ -1106,4 +1109,73 @@
   padding: 14px 12px;
   box-sizing: border-box;
   text-align: center;
+}
+
+.cards-list {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 340px);
+  padding: 0 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.card-item {
+  width: 340px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hotel-card {
+  width: 300px;
+  height: 212px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+  padding: 0 0;
+  margin: 0 0;
+}
+.hotel {
+  padding: 0 0;
+  margin: 0 0;
+}
+.price-catalog {
+  padding: 0 0;
+  margin: 0 0;
+}
+.more {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 26px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  background: #756157;
+}
+
+.favorites {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 20px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 4px;
+  background: #82B3D3;
+  min-width: 140px;
+  border: 0;
+  box-sizing: border-box;
 }
