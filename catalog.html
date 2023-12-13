@@ -56,7 +56,130 @@
           </ul>
         </nav>
       </header>
-      <main class="main"></main>
+      <main class="main">
+        <section class="filter">
+          <h2 class="filter-title">Гостиницы Седоны</h2>
+          <ul class="crumbs">
+            <li class="home" href="#"><svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g id="Vector">
+                  <path
+                    d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                    fill="white" />
+                  <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
+                </g>
+              </svg></li>
+            <li class="catalog-page" href="#">Гостиницы</li>
+          </ul>
+          <ul class="infrastructure">
+            <h3 class="infrastructure-title">Инфраструктура</h3>
+            <li class="infrastructure-item">
+              <input type="checkbox" checked>
+              Бассейн
+            </li>
+            <li class="infrastructure-item">
+              <input type="checkbox" checked>
+              Парковка
+            </li>
+            <li class="infrastructure-item">
+              <input type="checkbox">
+              Wi-Fi
+            </li>
+          </ul>
+          <ul class="housing">
+            <h3 class="housing-title">Тип Жилья</h3>
+            <li class="housing-item">
+              <input type="radio" checked>
+              Гостиница
+            </li>
+            <li class="housing-item">
+              <input type="radio">
+              Мотель
+            </li>
+            <li class="housing-item">
+              <input type="radio">
+              Апартаменты
+            </li>
+          </ul>
+          <ul class="price">
+            <h3 class="price-title">Стоимость, ₽:</h3>
+            <li>
+              <input type="text" class="number-input">
+            </li>
+            <li>
+              <input type="text" class="number-input">
+            </li>
+          </ul>
+          <ul class="buttons">
+            <li><button type="submit" class="submit-button">применить</button>
+            </li>
+            <li><button type="reset" class="reset-button">сбросить</button>
+            </li>
+          </ul>
+        </section>
+        <section class="main-catalog">
+          <form class="catalog-form">
+            <label for="catalog-select" class="select-title">найдено гостиниц:38</label>
+            <select name="value" id="catalog-select">
+              <option value="">Сначала дешевые</option>
+              <option value="petersburg">Сначала дорогие</option>
+              <option value="samara">Сначала популярные</option>
+            </select>
+            <ul class="display-method">
+              <li class="display-item">
+                <svg class="display-svg" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_101846_168)">
+                    <path d="M4 0H0V6H4V0Z" fill="black" />
+                    <path d="M16 0H12V6H16V0Z" fill="black" />
+                    <path d="M10 0H6V6H10V0Z" fill="black" />
+                    <path d="M4 8H0V14H4V8Z" fill="black" />
+                    <path d="M16 8H12V14H16V8Z" fill="black" />
+                    <path d="M10 8H6V14H10V8Z" fill="black" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_101846_168">
+                      <rect width="16" height="14" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
+              <li class="display-item">
+                <svg class="display-svg" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_101846_277)">
+                    <path d="M16 12H0V14H16V12Z" fill="black" />
+                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_101846_277">
+                      <rect width="16" height="14" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
+              <li class="display-item">
+                <svg class="display-svg" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_101846_294)">
+                    <path d="M2 0H0V2H2V0Z" fill="black" />
+                    <path d="M16 0H4V2H16V0Z" fill="black" />
+                    <path d="M2 4H0V6H2V4Z" fill="black" />
+                    <path d="M16 4H4V6H16V4Z" fill="black" />
+                    <path d="M2 8H0V10H2V8Z" fill="black" />
+                    <path d="M16 8H4V10H16V8Z" fill="black" />
+                    <path d="M2 12H0V14H2V12Z" fill="black" />
+                    <path d="M16 12H4V14H16V12Z" fill="black" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_101846_294">
+                      <rect width="16" height="14" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </li>
+            </ul>
+          </form>
+
+        </section>
+      </main>
       <footer class="main-footer">
         <div class="subscribe-background-catalog">
           <section class="subscribe">
