@@ -47,7 +47,7 @@
                     fill="black" />
                 </svg>
                 <span class="visually-hidden">Избранное</span>
-                <!-- <span class="favorite-number">12</span> -->
+                <span class="favorite-number">12</span>
               </a>
             </li>
             <li class="user-menu-item">
@@ -56,22 +56,22 @@
           </ul>
         </nav>
       </header>
-      <main>
+      <main class="main">
         <h1 class="visually-hidden">Добро пожаловать в город Седона</h1>
         <section class="cover">
           <h2 class="visually-hidden">Туристический город</h2>
           <img class="welcome" src="./images/welcome.svg" alt="добро пожаловать" width="458" height="352">
         </section>
-        <section class="description">
-          <h2 class="visually-hidden">О городе</h2>
-          <strong class="desctiption-catchy">Седона — небольшой городок в Аризоне,<br>
-            заслуживающий большего!</strong>
-          <p class="s2-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        </section>
         <section class="advantages">
-          <ul class="description-list">
-            <li class="description-item">
-              <div class="advantages-text  advantages-background-first-five">
+          <div class="description">
+            <h2 class="visually-hidden">О городе</h2>
+            <strong class="desctiption-catchy">Седона — небольшой городок в Аризоне,<br>
+              заслуживающий большего!</strong>
+            <p class="s2-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
+          <ul class="advantages-list">
+            <li class="advantages-item advantages-item-special">
+              <div class="advantages-text">
                 <h3 class="description-item-title" class="description-item-title-white">Настоящий городок</h3>
                 <p class="description-item-text" class="description-item-text-white">Седона — не аттракцион для
                   туристов,
@@ -79,29 +79,29 @@
               </div>
               <img src="./images/building.jpg" alt="здание администрации" class="building">
             </li>
-            <li class="description-item">
-              <div class="advantages-text advantages-background-two-four">
+            <li class="advantages-item">
+              <div class="advantages-text">
                 <h3 class="description-item-title">Небольшая площадь</h3>
                 <p class="description-item-text">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="description-item">
-              <div class="advantages-text advantages-background-three">
+            <li class="advantages-item">
+              <div class="advantages-text">
                 <h3 class="description-item-title">Красивая
                   дорога</h3>
                 <p class="description-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
-            <li class="description-item">
-              <div class="advantages-text advantages-background-two-four">
+            <li class="advantages-item">
+              <div class="advantages-text">
                 <h3 class="description-item-title">Мало
                   туристов</h3>
                 <p class="description-item-text">Большинство едет в Гранд Каньон и толпится там</p>
               </div>
             </li>
-            <li class="description-item">
+            <li class="advantages-item item advantages-item-special">
               <img src="./images/canyon.jpg" alt="мост дьявола" class="canyon">
-              <div class="advantages-text advantages-background-first-five">
+              <div class="advantages-text">
                 <h3 class="description-item-title" class="description-item-title-white">Там есть мост дьявола</h3>
                 <p class="description-item-text" class="description-item-text-white">Да, по нему можно пройти! Если вы
                   осмелитесь, разумеется</p>
@@ -114,15 +114,15 @@
           <strong class="service-catchy">Приезжайте в Седону отдохнуть<br> в комфорте и уюте!</strong>
           <p class="service-text22">Опытный персонал и качественное обслуживание!</p>
           <ul class="service-list">
-            <li class="service-item">
+            <li class="service-item homesvg">
               <h3 class="service-item-title">Жильё</h3>
               <p class="service-text18">Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!</p>
             </li>
-            <li class="service-item">
+            <li class="service-item foodsvg">
               <h3 class="service-item-title">Еда</h3>
               <p class="service-text18">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="service-item">
+            <li class="service-item boxsvg">
               <h3 class="service-item-title">Сувениры</h3>
               <p class="service-text18">Не только китайского,<br> но и настоящего местного производства!</p>
             </li>
@@ -143,8 +143,9 @@
             </h2>
             <p class="footer-text">Только полезная информация и никакого спама,<br>
               честное бойскаутское!</p>
-            <form action="#" class="footer-field"><input type="text" class="subscribe-input" placeholder="Ваш e-mail">
-              <button class="subscribe-button">Подписаться</button>
+            <form action="https://echo.htmlacademy.ru/" class="footer-field" method="post">
+              <input type="e-mail" class="subscribe-input" name="user-email" placeholder="Ваш e-mail" required>
+              <button class="subscribe-button" type="submit">Подписаться</button>
             </form>
           </section>
         </div>
@@ -206,6 +207,35 @@
         </section>
       </footer>
     </div>
+    <div class="modal modal-closed1">
+      <div class="modal-container">
+        <h2 class="modal-title">поиск гостиницы в седоне</h2>
+        <ul class="date-list">
+          <li class="date-item arrive">
+            <p class="date-text">Дата Заезда:</p>
+            <input class="date" type="text" placeholder="27 апреля 2020">
+          </li>
+          <li class="date-item depart">
+            <p class="date-text">Дата Выезда:</p>
+            <input class="date" type="text" placeholder="1 сентября 2023">
+          </li>
+        </ul>
+        <ul class="choice-list">
+          <li class="choice-item adult">
+            <p class="choice-text">Взрослые:</p>
+            <button class="left-adult" type="button"></button>
+            <input type="text" class="input-choice">
+            <button class="right-adult" type="button"></button>
+          </li>
+          <li class="choice-item child">
+            <p class="choice-text">Дети:</p>
+            <button class="left-child" type="button"></button>
+            <input type="text" class="input-choice">
+            <button class="right-child" type="button"></button>
+          </li>
+        </ul>
+        <button class="search-button" type="button">найти</button>
+      </div>
+    </div>
   </body>
-
 </html>
