@@ -905,7 +905,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: grid;
-  gap: 10px;
+  gap: 41px 0;
   width: 100%;
   grid-template-columns: 160px 160px 288px 191px;
   grid-template-rows: 78px 21px 24px 101px;
@@ -923,10 +923,9 @@
   font-weight: 700;
   line-height: 78px;
   color: #FFFFFF;
-  padding: 0 0;
   margin: 0 0;
   grid-area: title;
-  justify-items: flex-start;
+  padding: 35px 0 0 20px;
 }
 
 .crumbs {
@@ -934,7 +933,7 @@
   list-style: none;
   display: flex;
   justify-content: flex-start;
-  padding: 0 0;
+  padding: 2px 0 0 48px;
   margin: 0 0;
   grid-area: crumbs;
 }
@@ -944,6 +943,7 @@
   list-style: none;
   padding: 0 0;
   margin: 0 auto;
+
 }
 
 .infrastructure-title {
@@ -1076,7 +1076,11 @@
 .catalog-form {
   display: flex;
   justify-content: space-around;
-  padding: 0 70px;
+  align-items: center;
+  padding: 0 0;
+  margin: 0 auto;
+  padding-top: 47px;
+  margin-bottom: 37px;
 }
 
 #catalog-select {
@@ -1085,11 +1089,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 21px;
-  display: flex;
-  width: 292px;
+  min-width: 292px;
+  min-height: 49px;
   padding: 14px 20px;
-  justify-content: space-between;
-  align-items: center;
   border-radius: 4px;
   border: 2px solid var(--forms-elements-1, #E5E5E5);
 }
@@ -1116,19 +1118,36 @@
   justify-content: center;
   grid-template-columns: repeat(3, 340px);
   padding: 0 0;
-  margin: 0 auto;
+  margin: 0 0;
   list-style: none;
+  gap: 20px;
 }
 
 .card-item {
   width: 340px;
   margin: 0 auto;
   text-align: center;
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
+  display: grid;
+  justify-content: center;
+  gap: 26px 18px;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 212px 28px 21px 36px 37px;
+  grid-template-areas: "picture picture"
+    "title-card title-card"
+    "hotel price-cat"
+    "more-cat fav-cat"
+    "stars rating";
+
 }
 
 .hotel-card {
   width: 300px;
   height: 212px;
+  grid-area: picture;
+  padding-top: 20px;
+
 }
 
 .card-title {
@@ -1139,43 +1158,112 @@
   color: #000000;
   padding: 0 0;
   margin: 0 0;
+  grid-area: title-card;
+  justify-self: flex-start;
+  padding-top: 11px;
 }
+
 .hotel {
   padding: 0 0;
   margin: 0 0;
+  grid-area: hotel;
+  justify-self: flex-start;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+  /* padding-top: 20px; */
 }
+
 .price-catalog {
   padding: 0 0;
   margin: 0 0;
+  grid-area: price-cat;
+  justify-self: flex-end;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+  margin-right: -2px;
 }
+
 .more {
   color: #ffffff;
   text-decoration: none;
   padding: 8px 26px;
+  margin: auto auto;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
   border-radius: 4px;
   background: #756157;
+  grid-area: more-cat;
+  margin-top: -10px;
+}
+
+.special-favorites {
+  background: #7DB54F;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 10px;
+  margin: auto auto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  min-width: 140px;
+  border: 0;
+  box-sizing: border-box;
+  grid-area: fav-cat;
+  margin-top: -10px;
+  margin-right: -2px;
 }
 
 .favorites {
   color: #ffffff;
   text-decoration: none;
-  padding: 8px 20px;
-  margin: 0 auto;
+  padding: 8px 10px;
+  margin: auto auto;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
-  text-align: center;
   border-radius: 4px;
   background: #82B3D3;
   min-width: 140px;
   border: 0;
   box-sizing: border-box;
+  grid-area: fav-cat;
+  margin-top: -10px;
+  margin-right: -2px;
+}
+
+.stars {
+  grid-area: stars;
+  width: 140px;
+  height: 37px;
+}
+
+.rating {
+  padding: 0 0;
+  margin: 0 auto;
+  width: 140px;
+  grid-area: rating;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #333333;
+  border-radius: 4px;
+  background: var(--Forms-elements-2, #F2F2F2);
+  width: 140px;
+  padding-top: 9px;
 }
