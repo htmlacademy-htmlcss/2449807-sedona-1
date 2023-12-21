@@ -207,34 +207,44 @@
         </section>
       </footer>
     </div>
-    <div class="modal modal-closed1">
+    <div class="modal modal-closed">
       <div class="modal-container">
-        <h2 class="modal-title"><button type="button" class="modal-close-button"></button>поиск гостиницы в седоне</h2>
-
+        <button type="button" class="modal-close-button"></button>
+        <h2 class="modal-title">поиск гостиницы в седоне</h2>
         <ul class="date-list">
           <li class="date-item arrive">
-            <p class="date-text">Дата Заезда:</p>
-            <input class="date" type="text" value="27 апреля 2020">
+            <label class="date-text">Дата Заезда:</label>
+            <div class="date-container">
+              <input class="date" type="text" value="27 апреля 2020" placeholder="Укажите дату">
+              <div class="date-message error">Мы не можем отправить вас в прошлое.</div>
+            </div>
           </li>
           <li class="date-item depart">
-            <p class="date-text">Дата Выезда:</p>
-            <input class="date" type="text" value="1 сентября 2023">
+            <label class="date-text">Дата Выезда:</label>
+            <div class="date-container">
+              <input class="date" type="text" value="1 сентября 2023" placeholder="Укажите дату">
+              <div class="date-message">На эти даты есть свободные номера. Пока есть.</div>
+            </div>
           </li>
         </ul>
         <ul class="choice-list">
           <li class="choice-item adult">
-            <p class="choice-text">Взрослые:</p>
+            <label class="choice-text">Взрослые:</label>
             <button class="left-adult" type="button"><img src="./images/minus.svg" alt=""></button>
             <input type="text" class="input-choice" value="2">
             <button class="right-adult" type="button"><img src="./images/plus.svg" alt=""></button>
           </li>
           <li class="choice-item child">
-            <p class="choice-text">Дети:</p>
-            <svg class="info" width="26" height="26" viewBox="0 0 26 26" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
-              <circle cx="13" cy="13" r="13" fill="currentColor" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7H14V9H12V7ZM14 19H12V10H14V19Z" fill="white" />
-            </svg>
+            <label class="choice-text">Дети:
+              <button class="info">
+                <span class="info-text">
+                  <span class="info-wrapper">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                    размещаются бесплатно.
+                  </span>
+                </span>
+              </button>
+            </label>
             <button class="left-child" type="button"><img src="./images/minus.svg" alt=""></button>
             <input type="text" class="input-choice" value="2">
             <button class="right-child" type="button"><img src="./images/plus.svg" alt=""></button>
@@ -243,6 +253,7 @@
         <button class="search-button" type="button">найти</button>
       </div>
     </div>
+    <script src="script/script.js"></script>
   </body>
 
 </html>

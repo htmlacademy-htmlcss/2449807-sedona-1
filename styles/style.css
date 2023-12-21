@@ -723,6 +723,7 @@
   background: #FFFFFF;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
 }
 
 .modal-title {
@@ -737,7 +738,6 @@
   line-height: 36px;
   margin-bottom: 64px;
   padding-left: 24px;
-  position: relative;
 }
 
 .modal-close-button {
@@ -750,9 +750,11 @@
   height: 52px;
   position: absolute;
   border-radius: 50%;
-  right: 6px;
+  right: 52px;
 }
-
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
 .date-list {
   list-style: none;
   padding: 0 0;
@@ -761,66 +763,31 @@
 }
 
 .date-item {
-  padding: 0 0;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0 auto 23px;
   display: flex;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-  min-width: 577px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 577px;
 }
 
-.arrive.date-item {
-  position: relative;
-}
-
-.arrive.date-item::before {
-  content: "Мы не можем отправить вас в прошлое.";
-  position: absolute;
-  top: 52px;
-  right: 164px;
-  color: #ff5757;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21px;
-}
-
-.depart.date-item {
-  position: relative;
-}
-
-.depart.date-item::before {
-  position: absolute;
-  content: "На эти даты есть свободные номера. Пока есть.";
-  top: 52px;
-  right: 113px;
+.date-message {
   color: #333333;
+  display: block;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
   line-height: 21px;
+  padding-left: 20px;
 }
 
-.arrive {
-  margin-bottom: 48px;
+.error {
+  color: #ff5757;
 }
 
-.depart {
-  margin-bottom: 48px;
-}
-
-.arrive .date-text {
-  margin-right: 24px;
-}
-
-.depart .date-text {
-  margin-right: 19px;
-}
 
 .date-text {
   display: block;
-  padding: 0;
+  padding: 12px 0 0 0;
   margin: 0;
   color: #000;
   font-size: 20px;
@@ -828,10 +795,15 @@
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+  width: 125px;
+}
+
+.date-container {
+  width: 440px;
 }
 
 .date {
-  margin: 0 0;
+  margin: 0;
   padding: 12px 20px;
   border-radius: 4px;
   background: #f2f2f2;
@@ -845,22 +817,13 @@
   font-weight: 700;
   line-height: 24px;
   border: none;
-}
-.date-text {
-  position: relative;
-  content: "";
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
-.date-text::before {
-  content: "";
-  position: absolute;
   background-image: url("../images/calendar.svg");
-  width: 16px;
-  height: 15px;
-  top: 4px;
-  left: 539px;
+  background-repeat: no-repeat;
+  background-position: right 22px top 16px;
+  display: block;
+  margin-bottom: 4px;
 }
+
 .adult .choice-text {
   margin-right: 46px;
   padding-top: 12px;
@@ -868,18 +831,12 @@
 }
 
 .child .choice-text {
-  margin-left: 88px;
   padding-top: 12px;
-  margin-right: 11px;
+  margin-right: 40px;
+  padding-right: 43px;
+  position: relative;
+  z-index: 120;
 }
-
-.info {
-  box-sizing: border-box;
-  margin: 11px 46px 0 0;
-  color: #83b3d3;
-}
-
-.info:hover {}
 
 .choice-list {
   padding: 0 0;
@@ -889,7 +846,9 @@
   list-style: none;
 }
 
-.choice-item .adult {}
+.adult.choice-item {
+  margin-right: 88px;
+}
 
 .choice-item {
   min-width: 242px;
@@ -957,16 +916,85 @@
 .choice-text {
   display: block;
   padding: 0;
-  margin: 0 0;
-  color: #000;
-  font-family: PT Sans;
+  margin: 0;
+  color: #000000;
   font-size: 20px;
-  font-style: normal;
   font-weight: 700;
   line-height: 24px;
   text-transform: capitalize;
+}
 
+.info {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  right: 0;
+  top: 0;
+  padding-top: 11px;
+  cursor: pointer;
 
+}
+
+.info::before {
+  content: "";
+  display: block;
+  background: url("../images/icons/info-icon.svg") no-repeat top left;
+  width: 26px;
+  height: 26px;
+}
+
+.info-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  display: none;
+  padding-top: 14px;
+}
+.info-text::before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  transform: rotate(45deg);
+  background-color:  #333333;
+  position: absolute;
+  left: 119px;
+  top: 8px;
+
+}
+.info-wrapper {
+  color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border-radius: 10px;
+  background: #333333;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
+  width: 256px;
+  padding: 20px 20px 23px 22px;
+  box-sizing: border-box;
+  display: block;
+  text-align: left;
+}
+.info:hover .info-text {
+  display: block;
+}
+
+.info:hover::before {
+  opacity: 0.5;
+}
+
+.info:focus {
+  outline: none;
+}
+
+.info:focus .info-text {
+  display: block;
+}
+
+.info:focus::before {
+  opacity: 0.5;
 }
 
 .search-button {
@@ -975,11 +1003,11 @@
   padding: 18px 77px;
   align-items: center;
   border-radius: 10px;
-  background: #83B3D3;
+  background: #83b3d3;
   text-transform: uppercase;
   border: 0;
-  color: #FFFFFF;
-  font-family: PT Sans;
+  color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -988,7 +1016,7 @@
 }
 
 .subscribe-background-catalog {
-  background: #FFF;
+  background: #ffffff;
 }
 
 .footer-title-catalog {
@@ -1018,7 +1046,7 @@
 }
 
 .filter {
-  background-image: url(../images/background-catalog.jpg);
+  background-image: url("../images/background-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 35px;
@@ -1031,14 +1059,14 @@
   font-style: normal;
   font-weight: 700;
   line-height: 78px;
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 0;
   padding-left: 70px;
   margin-bottom: 8px;
 }
 
 .crumbs {
-  color: #FFFFFF;
+  color: #ffffff;
   list-style: none;
   display: flex;
   justify-content: flex-start;
