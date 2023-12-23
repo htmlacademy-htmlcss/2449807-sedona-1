@@ -1333,6 +1333,7 @@
 .price-input {
   display: inline-block;
   margin-right: -3px;
+  position: relative;
 }
 
 .price::before {
@@ -1351,7 +1352,7 @@
   box-sizing: border-box;
   width: 143px;
   height: 48px;
-  padding: 0 20px;
+  padding: 0 44px 0 20px;
   margin: 0;
   border: none;
   color: #000;
@@ -1361,11 +1362,27 @@
   font-weight: 400;
   line-height: 24px;
   font-family: "PT Sans", "Arial", sans-serif;
+  text-align: left;
+}
+
+.number-input[type=number] {
+  -webkit-appearance: initial;
 }
 
 .number-input.fr {
   border-radius: 4px 0px 0px 4px;
 
+}
+
+.range-input {
+  position: absolute;
+  top: 13px;
+  left: 105px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
 }
 
 .number-input.bef {
@@ -1468,15 +1485,19 @@
   margin-right: 70px;
   outline: none;
 }
+
 .catalog-select:hover {
   border: 2px solid #68a2ca;
 }
+
 .catalog-select:focus {
   border: 2px solid #68a2ca;
 }
+
 .catalog-select:active {
   border: 2px solid #3f5e72;
 }
+
 .display-method {
   margin: 0;
   padding: 0;
