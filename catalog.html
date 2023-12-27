@@ -12,7 +12,7 @@
     <div class="container">
       <header class="main-header">
         <a href="index.html" class="logo-link">
-          <img src="../2449807-sedona-1/images/icons/logo.svg" alt="Логотип сайта" class="logo" width="140" height="70.05">
+          <img src="./images/icons/logo.svg" alt="Логотип сайта" class="logo" width="140" height="70">
         </a>
         <nav class="nav">
           <ul class="header-nav">
@@ -60,132 +60,102 @@
         <section class="filter">
           <h2 class="filter-title">Гостиницы Седоны</h2>
           <ul class="crumbs">
-            <li class="home-cat" href="#"><svg  href="index.html" width="13" height="13" viewBox="0 0 13 13" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <g id="Vector">
-                  <path
-                    d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                    fill="white" />
-                  <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
-                </g>
-              </svg>
+            <li class="crumbs-item">
+              <span class="visually-hidden">Главная</span>
+              <a href="index.html" class="home-cat"></a>
             </li>
-            <li class="catalog-page arrow" href="catalog.html">Гостиницы</li>
+            <li class="crumbs-item">
+              <a class="catalog-page" href="catalog.html">Гостиницы</a>
+            </li>
           </ul>
-          <div class="filter-block">
-            <div class="filter-lists">
-              <ul class="infrastructure">
-                <h3 class="infrastructure-title">Инфраструктура:</h3>
-                <li class="infrastructure-item">
-                  <input type="checkbox" checked>
-                  Бассейн
-                </li>
-                <li class="infrastructure-item">
-                  <input type="checkbox" checked>
-                  Парковка
-                </li>
-                <li class="infrastructure-item">
-                  <input type="checkbox">
-                  Wi-Fi
-                </li>
-              </ul>
-              <ul class="housing">
-                <h3 class="housing-title">Тип Жилья:</h3>
-                <li class="housing-item">
-                  <input type="radio" checked>
-                  Гостиница
-                </li>
-                <li class="housing-item">
-                  <input type="radio">
-                  Мотель
-                </li>
-                <li class="housing-item">
-                  <input type="radio">
-                  Апартаменты
-                </li>
-              </ul>
+          <form action="https://echo.htmlacademy.ru/" class="filter-form" method="get">
+            <div class="filter-wrapper">
+              <div class="filter-wrapper-check">
+                <fieldset class="filter-block">
+                  <legend class="filter-block-title">Инфраструктура:</legend>
+                  <ul class="filter-list infrastructure">
+                    <li class="infrastructure-item">
+                      <input type="checkbox" class="visually-hidden checkbox" id="pool" name="pool" checked>
+                      <label class="checkbox-label" for="pool">Бассейн</label>
+                    </li>
+                    <li class="infrastructure-item">
+                      <input type="checkbox" checked class="visually-hidden checkbox" id="parking" name="parking">
+                      <label class="checkbox-label" for="parking">Парковка</label>
+                    </li>
+                    <li class="infrastructure-item">
+                      <input type="checkbox" class="visually-hidden checkbox" id="wifi" name="wifi">
+                      <label class="checkbox-label" for="wifi">Wi-Fi</label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filter-block">
+                  <legend class="filter-block-title">Тип Жилья:</legend>
+                  <ul class="filter-list housing">
+                    <li class="housing-item">
+                      <input type="radio" class="visually-hidden radio" id="hotel" value="hotel" name="type" checked>
+                      <label for="hotel" class="radio-label">Гостиница</label>
+                    </li>
+                    <li class="housing-item">
+                      <input type="radio" class="visually-hidden radio" id="motel" value="motel" name="type">
+                      <label for="motel" class="radio-label">Мотель</label>
+                    </li>
+                    <li class="housing-item">
+                      <input type="radio" class="visually-hidden radio" id="apart" value="apartment" name="type">
+                      <label for="apart" class="radio-label">Апартаменты</label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <div class="filter-wrapper-count-but">
+                <fieldset class="filter-block count">
+                  <legend class="filter-block-title ">Стоимость, ₽:</legend>
+                  <ul class="price scale">
+                    <li class="price-input">
+                      <label for="" class="range-input">от</label>
+                      <input type="number" class="number-input fr" value="0">
+                    </li>
+                    <li class="price-input">
+                      <label for="" class="range-input">до</label>
+                      <input type="number" class="number-input bef" value="9000">
+                    </li>
+                    <li class="scale-buttons">
+                      <button class="range-price"></button>
+                      <div class="scale-white"></div>
+                      <button class="range-price"></button>
+                      <div class="scale-transp"></div>
+                    </li>
+                  </ul>
+                </fieldset>
+                <fieldset class="filter-block">
+                  <legend class="visually-hidden">Отправить форму или сбросить</legend>
+                  <ul class="buttons">
+                    <li><button type="submit" class="submit-button">применить</button>
+                    </li>
+                    <li><button type="reset" class="reset-button">сбросить</button>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
             </div>
-            <div class="price-list">
-              <ul class="price scale">
-                <h3 class="price-title">Стоимость, ₽:</h3>
-                <li class="price-input">
-                  <label for="" class="range-input">от</label>
-                  <input type="number" class="number-input fr" value="0">
-                </li>
-                <li class="price-input">
-                  <label for="" class="range-input">до</label>
-                  <input type="number" class="number-input bef" value="9000">
-                </li>
-              </ul>
-              <ul class="buttons">
-                <li><button type="submit" class="submit-button">применить</button>
-                </li>
-                <li><button type="reset" class="reset-button">сбросить</button>
-                </li>
-              </ul>
-            </div>
-          </div>
+          </form>
         </section>
         <section class="main-catalog">
           <form class="catalog-form">
             <label for="catalog-select" class="select-title">найдено гостиниц: 38</label>
             <select name="value" id="catalog-select" class="catalog-select">
-              <option value="">Сначала дешевые</option>
-              <option value="petersburg">Сначала дорогие</option>
-              <option value="samara">Сначала популярные</option>
+              <option value="cheap">Сначала дешевые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="popular">Сначала популярные</option>
             </select>
             <ul class="display-method">
               <li class="display-item display-special">
-                <svg class="display-svg" width="16" height="14" viewBox="0 0 16 14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_101846_168)">
-                    <path d="M4 0H0V6H4V0Z" fill="black" />
-                    <path d="M16 0H12V6H16V0Z" fill="black" />
-                    <path d="M10 0H6V6H10V0Z" fill="black" />
-                    <path d="M4 8H0V14H4V8Z" fill="black" />
-                    <path d="M16 8H12V14H16V8Z" fill="black" />
-                    <path d="M10 8H6V14H10V8Z" fill="black" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_101846_168">
-                      <rect width="16" height="14" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <button class="view-button view-table"></button>
               </li>
               <li class="display-item">
-                <svg class="display-svg" width="16" height="14" viewBox="0 0 16 14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_101846_277)">
-                    <path d="M16 12H0V14H16V12Z" fill="black" />
-                    <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_101846_277">
-                      <rect width="16" height="14" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <button class="view-button view-slideshow"></button>
               </li>
               <li class="display-item">
-                <svg class="display-svg" width="16" height="14" viewBox="0 0 16 14" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_101846_294)">
-                    <path d="M2 0H0V2H2V0Z" fill="black" />
-                    <path d="M16 0H4V2H16V0Z" fill="black" />
-                    <path d="M2 4H0V6H2V4Z" fill="black" />
-                    <path d="M16 4H4V6H16V4Z" fill="black" />
-                    <path d="M2 8H0V10H2V8Z" fill="black" />
-                    <path d="M16 8H4V10H16V8Z" fill="black" />
-                    <path d="M2 12H0V14H2V12Z" fill="black" />
-                    <path d="M16 12H4V14H16V12Z" fill="black" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_101846_294">
-                      <rect width="16" height="14" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
+                <button class="view-button view-list"></button>
               </li>
             </ul>
           </form>
