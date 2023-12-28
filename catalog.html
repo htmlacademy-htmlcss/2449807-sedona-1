@@ -23,7 +23,7 @@
               <a href="index.html" class="header-nav-link">О Седоне</a>
             </li>
             <li class="header-nav-item">
-              <a href="catalog.html" class="header-nav-link">Гостиницы</a>
+              <a href="catalog.html" class="header-nav-link header-nav-link-active">Гостиницы</a>
             </li>
           </ul>
           <ul class="user-menu">
@@ -112,16 +112,20 @@
                   <ul class="price scale">
                     <li class="price-input">
                       <label for="" class="range-input">от</label>
-                      <input type="number" class="number-input fr" value="0">
+                      <input type="number" class="number-input fr" value="0" name="min-price">
                     </li>
                     <li class="price-input">
                       <label for="" class="range-input">до</label>
-                      <input type="number" class="number-input bef" value="9000">
+                      <input type="number" class="number-input bef" value="9000" name="max-price">
                     </li>
                     <li class="scale-buttons">
-                      <button class="range-price"></button>
+                      <button class="range-price min" type="button">
+                        <span class="visually-hidden">Установить нижнюю границу диапазона цены</span>
+                      </button>
                       <div class="scale-white"></div>
-                      <button class="range-price"></button>
+                      <button class="range-price max" type="button">
+                        <span class="visually-hidden">Установить верхнюю границу диапазона цены</span>
+                      </button>
                       <div class="scale-transp"></div>
                     </li>
                   </ul>
@@ -148,14 +152,20 @@
               <option value="popular">Сначала популярные</option>
             </select>
             <ul class="display-method">
-              <li class="display-item display-special">
-                <button class="view-button view-table"></button>
+              <li class="display-item">
+                <button class="view-button view-button-active view-table">
+                  <span class="visually-hidden">Представить в виде таблицы</span>
+                </button>
               </li>
               <li class="display-item">
-                <button class="view-button view-slideshow"></button>
+                <button class="view-button view-slideshow">
+                  <span class="visually-hidden">Представить в виде слайд-шоу</span>
+                </button>
               </li>
               <li class="display-item">
-                <button class="view-button view-list"></button>
+                <button class="view-button view-list">
+                  <span class="visually-hidden">Представить в виде списка</span>
+                </button>
               </li>
             </ul>
           </form>
@@ -215,12 +225,24 @@
             </li>
           </ul>
           <ul class="page-list">
-            <li class="page-item one">1</li>
-            <li class="page-item">2</li>
-            <li class="page-item">3</li>
-            <li class="page-item">4</li>
-            <li class="page-item more-page">...</li>
-            <li class="page-item">10</li>
+            <li class="page-item first">
+              <a class="page-item-a one" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-item-a" href="#">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-item-a" href="#">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-item-a" href="#">4</a>
+            </li>
+            <li class="page-item more-page">
+              <a class="page-item-a more-pages" href="#">...</a>
+            </li>
+            <li class="page-item">
+              <a class="page-item-a" href="#">10</a>
+            </li>
           </ul>
         </section>
       </main>
