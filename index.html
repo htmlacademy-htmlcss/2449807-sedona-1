@@ -4,26 +4,27 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link type="image/svg+xml" href="./images/favicon.svg" rel="shortcut icon">
+    <link type="image/svg+xml" href="./images/icons/favicon.svg" rel="shortcut icon">
     <link rel="stylesheet" href="./styles/style.css" class="styles">
   </head>
 
   <body class="body">
     <div class="container">
       <header class="main-header">
-        <a href="https://htmlacademy.ru" class="logo-link">
-          <img src="../2449807-sedona-1/images/logo.svg" alt="Логотип сайта" class="logo" width="140" height="70.05">
+        <a href="index.html" class="logo-link">
+          <img src="../2449807-sedona-1/images/icons/logo.svg" alt="Логотип сайта" class="logo" width="140"
+            height="70.05">
         </a>
         <nav class="nav">
           <ul class="header-nav">
             <li class="header-nav-item">
-              <a href="#" class="header-nav-link">Главная</a>
+              <a href="index.html" class="header-nav-link header-nav-link-active">Главная</a>
             </li>
             <li class="header-nav-item">
-              <a href="#" class="header-nav-link">О Седоне</a>
+              <a href="index.html" class="header-nav-link">О Седоне</a>
             </li>
             <li class="header-nav-item">
-              <a href="#" class="header-nav-link">Гостиницы</a>
+              <a href="catalog.html" class="header-nav-link">Гостиницы</a>
             </li>
           </ul>
           <ul class="user-menu">
@@ -60,7 +61,7 @@
         <h1 class="visually-hidden">Добро пожаловать в город Седона</h1>
         <section class="cover">
           <h2 class="visually-hidden">Туристический город</h2>
-          <img class="welcome" src="./images/welcome.svg" alt="добро пожаловать" width="458" height="352">
+          <img class="welcome" src="./images/icons/welcome.svg" alt="добро пожаловать" width="458" height="352">
         </section>
         <section class="advantages">
           <div class="description">
@@ -207,35 +208,61 @@
         </section>
       </footer>
     </div>
-    <div class="modal modal-closed1">
+    <div class="modal modal-closed">
       <div class="modal-container">
+        <button type="button" class="modal-close-button"></button>
         <h2 class="modal-title">поиск гостиницы в седоне</h2>
         <ul class="date-list">
           <li class="date-item arrive">
-            <p class="date-text">Дата Заезда:</p>
-            <input class="date" type="text" placeholder="27 апреля 2020">
+            <label class="date-text">Дата Заезда:</label>
+            <div class="date-container">
+              <input class="date" type="text" value="27 апреля 2020" placeholder="Укажите дату">
+              <div class="date-message error">Мы не можем отправить вас в прошлое.</div>
+            </div>
           </li>
           <li class="date-item depart">
-            <p class="date-text">Дата Выезда:</p>
-            <input class="date" type="text" placeholder="1 сентября 2023">
+            <label class="date-text">Дата Выезда:</label>
+            <div class="date-container">
+              <input class="date" type="text" value="1 сентября 2023" placeholder="Укажите дату">
+              <div class="date-message">На эти даты есть свободные номера. Пока есть.</div>
+            </div>
           </li>
         </ul>
         <ul class="choice-list">
           <li class="choice-item adult">
-            <p class="choice-text">Взрослые:</p>
-            <button class="left-adult" type="button"></button>
-            <input type="text" class="input-choice">
-            <button class="right-adult" type="button"></button>
+            <label class="choice-text">Взрослые:</label>
+            <button class="left-adult" type="button">
+              <span class="visually-hidden">Уменьшить</span>
+            </button>
+            <input type="text" class="input-choice" value="2">
+            <button class="right-adult" type="button">
+              <span class="visually-hidden">Увеличить</span>
+            </button>
           </li>
           <li class="choice-item child">
-            <p class="choice-text">Дети:</p>
-            <button class="left-child" type="button"></button>
-            <input type="text" class="input-choice">
-            <button class="right-child" type="button"></button>
+            <label class="choice-text">Дети:
+              <button class="info">
+                <span class="info-text">
+                  <span class="info-wrapper">
+                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+                    размещаются бесплатно.
+                  </span>
+                </span>
+              </button>
+            </label>
+            <button class="left-child" type="button">
+              <span class="visually-hidden">Уменьшить</span>
+            </button>
+            <input type="text" class="input-choice" value="2">
+            <button class="right-child" type="button">
+              <span class="visually-hidden">Увеличить</span>
+            </button>
           </li>
         </ul>
         <button class="search-button" type="button">найти</button>
       </div>
     </div>
+    <script src="script/script.js"></script>
   </body>
+
 </html>
