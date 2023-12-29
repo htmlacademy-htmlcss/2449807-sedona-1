@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link type="image/svg+xml" href="./images/icons/favicon.svg" rel="shortcut icon">
+    <link type="image/png" sizes="32x32" href="./images/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="./styles/style.css" class="styles">
   </head>
 
@@ -58,7 +58,7 @@
       </header>
       <main class="main">
         <section class="filter">
-          <h2 class="filter-title">Гостиницы Седоны</h2>
+          <h1 class="filter-title">Гостиницы Седоны</h1>
           <ul class="crumbs">
             <li class="crumbs-item">
               <span class="visually-hidden">Главная</span>
@@ -111,12 +111,12 @@
                   <legend class="filter-block-title ">Стоимость, ₽:</legend>
                   <ul class="price scale">
                     <li class="price-input">
-                      <label for="" class="range-input">от</label>
-                      <input type="number" class="number-input fr" value="0" name="min-price">
+                      <label for="number-in" class="range-input">от</label>
+                      <input id="number-in" type="number" class="number-input fr" value="0" name="min-price">
                     </li>
                     <li class="price-input">
-                      <label for="" class="range-input">до</label>
-                      <input type="number" class="number-input bef" value="9000" name="max-price">
+                      <label for="number-inp" class="range-input">до</label>
+                      <input id="number-inp" type="number" class="number-input bef" value="9000" name="max-price">
                     </li>
                     <li class="scale-buttons">
                       <button class="range-price min" type="button">
@@ -171,7 +171,7 @@
           </form>
           <ul class="cards-list">
             <li class="card-item">
-              <img class="hotel-card" src="./images/hotel-1.jpg" alt="Amara">
+              <img class="hotel-card" src="./images/hotel-1.jpg" alt="Amara" width="300" height="212">
               <h3 class="card-title">Amara Resort & Spa</h3>
               <div class="container-card">
                 <p class="hotel">Гостиница</p>
@@ -185,7 +185,7 @@
               </div>
             </li>
             <li class="card-item">
-              <img class="hotel-card" src="./images/hotel-2.jpg" alt="Poco Diablo">
+              <img class="hotel-card" src="./images/hotel-2.jpg" alt="Poco Diablo" width="300" height="212">
               <h3 class="card-title">Villas at Poco Diablo</h3>
               <div class="container-card">
                 <p class="hotel">Гостиница</p>
@@ -198,7 +198,7 @@
               </div>
             </li>
             <li class="card-item">
-              <img class="hotel-card" src="./images/hotel-3.jpg" alt="Quail Inn">
+              <img class="hotel-card" src="./images/hotel-3.jpg" alt="Quail Inn" width="300" height="212">
               <h3 class="card-title">Desert Quail Inn</h3>
               <div class="container-card">
                 <p class="hotel">Гостиница</p>
@@ -211,7 +211,7 @@
               </div>
             </li>
             <li class="card-item">
-              <img class="hotel-card" src="./images/hotel-4.jpg" alt="GreenTree Inn">
+              <img class="hotel-card" src="./images/hotel-4.jpg" alt="GreenTree Inn" width="300" height="212">
               <h3 class="card-title">GreenTree Inn</h3>
               <div class="container-card">
                 <p class="hotel">Гостиница</p>
@@ -254,7 +254,7 @@
             <p class="footer-text-catalog">Только полезная информация и никакого спама,<br>
               честное бойскаутское!</p>
             <form action="https://echo.htmlacademy.ru/" class="footer-field" method="post">
-              <input type="e-mail" class="subscribe-input" name="user-email" placeholder="Ваш e-mail" required>
+              <input type="email" class="subscribe-input" name="user-email" placeholder="Ваш e-mail" required>
               <button class="subscribe-button" type="submit">Подписаться</button>
             </form>
           </section>
