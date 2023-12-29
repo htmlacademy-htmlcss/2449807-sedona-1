@@ -157,18 +157,19 @@
   margin-left: 5px;
   padding: 7px 7px 7px 7px;
   outline: none;
+  color: #000000;
 }
 
 .user-search:hover {
-  opacity: 0.5;
+  color: rgb(0, 0, 0, 0.5);
 }
 
 .user-search:focus {
-  opacity: 0.5;
+  color: rgb(0, 0, 0, 0.5);
 }
 
 .user-search:active {
-  opacity: 0.3;
+  color: rgb(0, 0, 0, 0.3);
 }
 
 .user-favorite {
@@ -182,24 +183,25 @@
   padding: 7px 7px 7px 7px;
   position: relative;
   outline: none;
+  color: #000000;
 }
 
 .user-favorite:hover {
-  opacity: 0.5;
+  color: rgb(0, 0, 0, 0.5);
 }
 
 .user-favorite:focus {
-  opacity: 0.5;
+  color: rgb(0, 0, 0, 0.5);
 }
 
 .user-favorite:active {
-  opacity: 0.3;
+  color: rgb(0, 0, 0, 0.3);
 }
 
 .favorite-number {
   color: #ffffff;
   border-radius: 10px;
-  background: #7DB54F;
+  background: #7db54f;
   font-size: 10px;
   min-width: 20px;
   height: 20px;
@@ -238,7 +240,7 @@
 
 .user-menu-link-button:active {
   background: #756157;
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.188);
 }
 
 .main {
@@ -246,7 +248,7 @@
 }
 
 .cover {
-  background-color: rgb(38, 34, 23);
+  background-color: #262217;
   background-image: url("../images/icons/divider.svg"), url("../images/welcome-background.jpg");
   padding: 51px 0 82px;
   background-repeat: no-repeat no-repeat;
@@ -300,13 +302,13 @@
   box-sizing: border-box;
   width: 400px;
   text-align: center;
-  background-color: #83b3d333;
+  background-color: rgba(131, 179, 211, 0.2);
   padding-top: 114px;
   padding-bottom: 112px;
 }
 
 .advantages-item:nth-child(2n) .advantages-text {
-  background-color: #83b3d31f;
+  background-color: rgba(131, 179, 211, 0.122);
 }
 
 .advantages-item.advantages-item-special .advantages-text {
@@ -348,23 +350,28 @@
   position: absolute;
   width: 60px;
   height: 1px;
-  border-top: 2px solid #0000004d;
+  border-top: 2px solid rgba(0, 0, 0, 0.302);
   bottom: 0;
   left: 50%;
   margin-left: -30px;
 }
 
 .advantages-item-special .description-item-title::before {
-  border-top: 2px solid #ffffff4d;
+  border-top: 2px solid rgba(255, 255, 255, 0.302);
 }
 
 .description-item-text {
+  color: #333333;
   padding: 0;
   margin: 0 auto;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   width: 230px;
+}
+
+.description-item-text-white {
+  color: #ffffff;
 }
 
 .service {
@@ -392,7 +399,7 @@
 }
 
 .service-text22 {
-  padding: 0;
+  padding: 0 200px;
   margin: 0 auto;
   font-size: 22px;
   font-weight: 400;
@@ -411,7 +418,7 @@
 }
 
 .service-item {
-  background-color: #83b3d31f;
+  background-color: rgba(131, 179, 211, 0.122);
   position: relative;
 }
 
@@ -529,6 +536,7 @@
   background: #756157;
   margin-bottom: 96px;
   outline: none;
+  width: 276px;
 }
 
 .promo-link:hover {
@@ -541,7 +549,7 @@
 
 .promo-link:active {
   background: #756157;
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.188);
 }
 
 .subscribe-background {
@@ -653,7 +661,11 @@
 
 .subscribe-button:active {
   background: #82b3d3;
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.188);
+}
+
+.subscribe-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .contacts {
@@ -697,7 +709,7 @@
 }
 
 .socials-link:active {
-  color: #68a2ca30;
+  color: rgba(104, 162, 202, 0.188);
 }
 
 .footer-tel {
@@ -732,7 +744,7 @@
 }
 
 .a-tel:active {
-  color: #75615730;
+  color: rgba(117, 97, 87, 0.188);
 }
 
 .footer-logo {
@@ -754,14 +766,14 @@
 }
 
 .footer-logo:active {
-  color: #75615730;
+  color: rgba(117, 97, 87, 0.188);
 }
 
 .modal {
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #f2f2f2cc;
+  background: rgba(242, 242, 242, 0.8);
   top: 0;
   left: 0;
   display: flex;
@@ -787,7 +799,7 @@
 .modal-title {
   text-transform: uppercase;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   color: #000000;
   font-family: "PT Sans" Arial, sans-serif;
   font-size: 30px;
@@ -796,6 +808,7 @@
   line-height: 36px;
   margin-bottom: 64px;
   padding-left: 24px;
+  width: 413px;
 }
 
 .modal-close-button {
@@ -1189,9 +1202,11 @@
 
 .search-button:active {
   background: #68a2ca;
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.188);
 }
-
+.search-button:disabled {
+  background-color: #e5e5e5;
+}
 .subscribe-background-catalog {
   background: #ffffff;
 }
@@ -1286,11 +1301,11 @@
 }
 
 .catalog-page:hover {
-  color: #ffffff99;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .catalog-page:active {
-  color: #ffffff4d
+  color: rgba(255, 255, 255, 0.302)
 }
 
 .catalog-page:focus {
@@ -1335,7 +1350,7 @@
 }
 
 .infrastructure {
-  color: #FFFFFF;
+  color: #ffffff;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1404,7 +1419,7 @@
 }
 
 .checkbox:focus + .checkbox-label::before {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
 }
 
 .checkbox-label:active {
@@ -1416,7 +1431,7 @@
 }
 
 .housing {
-  color: #FFFFFF;
+  color: #ffffff;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -1484,6 +1499,10 @@
   opacity: 0.3;
 }
 
+.radio:disabled + .radio-label {
+  opacity: 0.3;
+}
+
 .price-list {
   display: grid;
   grid-template-columns: 300px 191px;
@@ -1521,7 +1540,7 @@
 }
 
 .scale-transp {
-  border-bottom: 4px solid #ffffff30;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.188);
   width: 287px;
   position: absolute;
   top: 8px;
@@ -1575,6 +1594,15 @@
   position: relative;
 }
 
+.number-input {
+  -moz-appearance: textfield;
+}
+
+.number-input:hover,
+.number-input:focus {
+  -moz-appearance: number-input;
+}
+
 .number-input:hover {
   background-color: #e6e6e6;
 }
@@ -1623,7 +1651,7 @@
   margin: 0 auto;
   box-sizing: border-box;
   background: #82b3d3;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1647,7 +1675,11 @@
 
 .submit-button:active {
   background: #82b3d3;
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.188);
+}
+
+.submit-button:disabled {
+  background-color: #e5e5e5;
 }
 
 .reset-button {
@@ -1677,7 +1709,7 @@
 }
 
 .reset-button:active {
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.302);
 }
 
 .reset-button:disabled {
@@ -1692,18 +1724,18 @@
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  padding-left: 70px;
-  margin-right: 201px;
+  margin-right: 200px;
+  padding-top: 7px;
 }
 
 .catalog-form {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  padding: 0 0;
+  align-items: flex-start;
+  padding: 0 70px;
   margin: 0 auto;
-  padding-top: 49px;
-  margin-bottom: 38px;
+  padding-top: 50px;
+  margin-bottom: 37px;
 
 }
 
@@ -1742,8 +1774,8 @@
 }
 
 .catalog-select:disabled {
-  border: 2px solid #0000004d;
-  color: #0000004d;
+  border: 2px solid rgba(0, 0, 0, 0.302);
+  color: rgba(0, 0, 0, 0.302);
 }
 
 .display-method {
@@ -1751,9 +1783,10 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 8px;
+  width: 160px;
 }
 
 .view-button {
@@ -1818,7 +1851,7 @@
   width: 340px;
   margin: 0;
   border-radius: 4px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid #e6e6e6;
   padding: 22px 20px 20px 19px;
   box-sizing: border-box;
 }
@@ -1895,7 +1928,7 @@
 
 .more:active {
   background: #756157;
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.188);
 }
 
 
@@ -1911,7 +1944,7 @@
   line-height: 20px;
   text-transform: uppercase;
   border-radius: 4px;
-  background: #82B3D3;
+  background: #82b3d3;
   min-width: 140px;
   border: 0;
   box-sizing: border-box;
@@ -1928,7 +1961,7 @@
 
 .favorites:active {
   background: #82b3d3;
-  color: #ffffff30;
+  color: rgba(255, 255, 255, 0.188);
 }
 
 .favorites-special {
@@ -1945,7 +1978,11 @@
 
 .favorites-special:active {
   background: #7db54f;
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.favorites:disabled {
+  background-color: #e5e5e5;
 }
 
 .stars {
@@ -2020,7 +2057,7 @@
   color: #ffffff;
   outline: none;
   margin: 0;
-  padding: 12px 4px;
+  padding: 12px 6px;
   border-radius: 4px;
   background: #82b3d3;
   font-size: 20px;
@@ -2028,7 +2065,7 @@
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  width: 60px;
+  min-width: 60px;
   height: 60px;
   box-sizing: border-box;
   text-align: center;
@@ -2045,7 +2082,7 @@
 
 .page-item-a:active {
   background: #82b3d3;
-  color: #ffffff4d;
+  color: rgba(255, 255, 255, 0.302);
 }
 
 
