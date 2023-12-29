@@ -251,6 +251,8 @@
   padding: 51px 0 82px;
   background-repeat: no-repeat no-repeat;
   background-size: 1200px 57px, cover;
+  min-height: 485px;
+  box-sizing: border-box;
   background-position: left bottom, center 0;
 }
 
