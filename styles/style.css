@@ -126,8 +126,6 @@
   background-color: rgba(0, 0, 0, 0.10);
 }
 
-.header-nav-link:active {}
-
 .user-menu {
   padding: 0;
   margin: 0;
@@ -611,6 +609,21 @@
   margin-bottom: 104px;
 }
 
+.subscribe-input:hover {
+  background-color: #e6e6e6;
+}
+
+.subscribe-input:focus-visible {
+  outline: 3px solid #83b3d3;
+  background-color: #e6e6e6;
+  z-index: 5;
+}
+
+.subscribe-input:active {
+  outline: 2px solid #000000;
+  background-color: #e6e6e6;
+}
+
 .subscribe-button {
   font-size: 20px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -664,8 +677,6 @@
   list-style: none;
 }
 
-.socials-item {}
-
 .socials-link {
   width: 47px;
   height: 40px;
@@ -677,17 +688,16 @@
   outline: none;
 }
 
-
-.socials-icon:hover {
+.socials-link:hover {
   color: #68a2ca;
 }
 
-.socials-icon:focus {
+.socials-link:focus {
   color: #68a2ca;
   outline: none;
 }
 
-.socials-icon:active {
+.socials-link:active {
   color: #68a2ca30;
 }
 
@@ -700,7 +710,6 @@
   color: #000000;
   padding: 0;
   width: 398px;
-
 }
 
 .a-tel {
@@ -737,15 +746,15 @@
   outline: none;
 }
 
-.logo-icon:hover {
+.footer-logo:hover {
   color: #756157;
 }
 
-.logo-icon:focus {
+.footer-logo:focus {
   color: #756157;
 }
 
-.logo-icon:active {
+.footer-logo:active {
   color: #75615730;
 }
 
