@@ -267,7 +267,6 @@
   list-style: none;
   text-align: center;
   display: block;
-
 }
 
 .desctiption-catchy {
@@ -280,8 +279,6 @@
   text-transform: uppercase;
   color: #000000;
 }
-
-.advantages {}
 
 .advantages-list {
   padding: 0;
@@ -312,7 +309,7 @@
   background-color: #83b3d31f;
 }
 
-.advantages-list .advantages-item-special .advantages-text {
+.advantages-item.advantages-item-special .advantages-text {
   color: #ffffff;
   background-color: #82b3d3;
   padding-top: 103px;
@@ -516,7 +513,6 @@
 }
 
 .promo-link {
-  padding: 0;
   margin: 0 auto;
   list-style: none;
   font-size: 20px;
@@ -532,6 +528,7 @@
   border-radius: 4px;
   background: #756157;
   margin-bottom: 96px;
+  outline: none;
 }
 
 .promo-link:hover {
@@ -792,7 +789,7 @@
   padding: 0;
   margin: 0 auto;
   color: #000000;
-  font-family: PT Sans;
+  font-family: "PT Sans" Arial, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -1135,7 +1132,7 @@
   line-height: 20px;
   border-radius: 10px;
   background: #333333;
-  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.30);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
   width: 256px;
   padding: 20px 20px 23px 22px;
   box-sizing: border-box;
@@ -1689,7 +1686,7 @@
 }
 
 .select-title {
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
